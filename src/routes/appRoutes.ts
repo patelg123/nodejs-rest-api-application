@@ -15,7 +15,7 @@ class AppRoutes {
 
 	private config(): void {
 		this.router.get("/", (req: express.Request, res: express.Response) => {
-			res.status(200).send(`Server now running at port ${PORT}`)
+			res.status(200).send(`Server is now running at port ${PORT}`)
 		});
 	}
 }
