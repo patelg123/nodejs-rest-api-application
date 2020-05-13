@@ -1,28 +1,36 @@
 {
-  "name": "nodejs-rest-api-application",
-  "version": "1.0.0",
-  "description": "Node.js REST API Application",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://patelg123@github.com/patelg123/nodejs-rest-api-application.git"
-  },
-  "keywords": [
-    "Node.js"
-  ],
-  "author": "Girish Patel",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/patelg123/nodejs-rest-api-application/issues"
-  },
-  "homepage": "https://github.com/patelg123/nodejs-rest-api-application#readme",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.13"
-  }
+	"name": "nodejs-rest-api-application",
+	"version": "1.0.0",
+	"description": "Node.js REST API Application",
+	"main": "./dist/server.js",
+	"scripts": {
+		"start": "nodemon dist/server.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://patelg123@github.com/patelg123/nodejs-rest-api-application.git"
+	},
+	"keywords": [
+		"Node.js"
+	],
+	"author": "Girish Patel",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/patelg123/nodejs-rest-api-application/issues"
+	},
+	"homepage": "https://github.com/patelg123/nodejs-rest-api-application#readme",
+	"dependencies": {
+		"body-parser": "^1.19.0",
+		"express": "^4.17.1",
+		"helmet": "^3.22.0",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^5.9.13"
+	},
+	"devDependencies": {
+		"@types/express": "^4.17.6",
+		"nodemon": "^2.0.3",
+		"rimraf": "^3.0.2",
+		"typescript": "^3.9.2"
+	}
 }
