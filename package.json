@@ -4,8 +4,9 @@
   "description": "Node.js REST API Application",
   "main": "./dist/server.js",
   "scripts": {
-    "start": "nodemon dist/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --watch dist/server.js",
+    "test": "jest",
+    "coverage": "jest --coverage",
     "pretest": "npm run build",
     "postinstall": "npm run build",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --fix",
@@ -40,11 +41,14 @@
   "devDependencies": {
     "@types/express": "^4.17.6",
     "@types/helmet": "0.0.47",
+    "@types/jest": "^25.2.2",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
     "eslint": "^7.0.0",
+    "jest": "^26.0.1",
     "nodemon": "^2.0.3",
     "rimraf": "^3.0.2",
+    "ts-jest": "^25.5.1",
     "typescript": "^3.9.2"
   }
 }
