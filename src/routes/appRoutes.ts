@@ -1,10 +1,5 @@
 import * as express from "express";
-import * as dotenv from "dotenv";
-
-dotenv.config();
-
-const PORT = process.env.PORT || 8080;
-
+import { userController } from "../controllers/userController";
 
 class AppRoutes {
 	public router: express.Router = express.Router();
@@ -14,9 +9,7 @@ class AppRoutes {
 	}
 
 	private config(): void {
-		this.router.get("/", (req: express.Request, res: express.Response) => {
-			res.status(200).send(`Server is now running at port ${PORT}`)
-		});
+		this.router.get("/", userController.serverTest);
 	}
 }
 
