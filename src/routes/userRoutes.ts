@@ -1,7 +1,7 @@
 import * as express from "express";
 import { userController } from "../controllers/userController";
 
-class AppRoutes {
+class UserRoutes {
   public router: express.Router = express.Router();
 
   constructor() {
@@ -18,4 +18,5 @@ class AppRoutes {
   }
 }
 
-export const appRoutes = new AppRoutes().router;
+
+export const userRoutes = new UserRoutes().router;
