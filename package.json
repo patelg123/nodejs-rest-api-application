@@ -4,8 +4,9 @@
   "description": "Node.js REST API Application",
   "main": "./dist/server.js",
   "scripts": {
-    "start": "nodemon --watch dist/server.js",
+    "start": "nodemon dist/server.js",
     "test": "jest",
+    "watch:test": "nodemon --watch src --ext ts --exec \"npm run test\"",
     "coverage": "jest --coverage",
     "pretest": "npm run build",
     "postinstall": "npm run build",
