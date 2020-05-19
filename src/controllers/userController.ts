@@ -1,7 +1,6 @@
 import { Request, Response } from "express";
 import * as dotenv from "dotenv";
 
-
 dotenv.config();
 
 const PORT = process.env.PORT || 8080;
@@ -21,11 +20,11 @@ class UserController{
   }
 
   public createUser = (req: Request, res: Response): void => {
-    res.status(200).send(`Create User`);
+    res.status(200).send(`Create user`);
   }
   
   public updateUser = (req: Request, res: Response): void => {
-    res.status(200).send(`Update ${req.params.userId}`)
+    res.status(200).send(`Update user ${req.params.userId}`)
   }
 
   public deleteUser = (req: Request, res: Response): void => {
