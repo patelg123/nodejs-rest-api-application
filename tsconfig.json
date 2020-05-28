@@ -8,7 +8,7 @@
 		"outDir": "./dist",
 		"strict": true,
 		"strictPropertyInitialization": false,
-		"types": ["jest"] // https://stackoverflow.com/questions/51634361/how-to-force-tsc-to-ignore-node-modules-folder
+		"types": ["chai", "mocha"],
 	},
 	"include": [
     "./src/**/*.ts"

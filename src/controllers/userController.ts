@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import * as dotenv from "dotenv";
+import { UserSchema } from "../models/userModel"
 
 dotenv.config();
 
